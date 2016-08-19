@@ -11,9 +11,10 @@ Only the GUI layer for a separate ***Northwind*** *project*.  It meets the follo
  1. Fulfill all guidelines
  2. UI cannot block on retrieving data - spinner
 
+
 <i class="icon-ok"> End result
  ------------------------------
- 
+
  ![](./Utils/Github/1.png)
  ![](./Utils/Github/2.png)
  ![](./Utils/Github/3.png)
