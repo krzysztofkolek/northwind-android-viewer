@@ -12,6 +12,7 @@ Only the GUI layer for a separate ***Northwind*** *project*.  It meets the follo
  2. UI cannot block on retrieving data - spinner
 
 
+
 <i class="icon-ok"> End result
  ------------------------------
 
