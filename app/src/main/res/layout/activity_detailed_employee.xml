@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kolek.krzysztof.pum.pumkrzysztofkolek.DetailedEmployeeActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:textDirection="anyRtl">
+
+            <ImageView
+                android:id="@+id/EmployeePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:longClickable="false" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@+id/EmployeePhoto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/FirstName_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView11"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_toEndOf="@+id/textView14"
+                android:layout_toRightOf="@+id/textView14"
+                android:windowSoftInputMode="adjustResize|stateHidden" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView13"
+                android:layout_alignEnd="@+id/textView11"
+                android:layout_alignRight="@+id/textView11"
+                android:text="Last name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/LastName_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/FirstName_TextBox"
+                android:layout_alignLeft="@+id/FirstName_TextBox"
+                android:layout_alignRight="@+id/FirstName_TextBox"
+                android:layout_alignStart="@+id/FirstName_TextBox"
+                android:layout_below="@+id/FirstName_TextBox"
+                android:windowSoftInputMode="adjustResize|stateHidden" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LastName_TextBox"
+                android:layout_marginTop="23dp"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/Title_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_alignEnd="@+id/LastName_TextBox"
+                android:layout_alignLeft="@+id/LastName_TextBox"
+                android:layout_alignRight="@+id/LastName_TextBox"
+                android:layout_alignStart="@+id/LastName_TextBox"
+                android:windowSoftInputMode="adjustResize|stateHidden" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/BirthDate_TextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Title of courtesy"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/TitleOfCourtesy_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Title_TextBox"
+                android:layout_alignRight="@+id/Title_TextBox"
+                android:layout_below="@+id/Title_TextBox"
+                android:layout_toEndOf="@+id/textView14"
+                android:layout_toRightOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/BirthDate_TextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Birth date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/BirthDate_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/TitleOfCourtesy_TextBox"
+                android:layout_alignLeft="@+id/TitleOfCourtesy_TextBox"
+                android:layout_alignRight="@+id/TitleOfCourtesy_TextBox"
+                android:layout_alignStart="@+id/TitleOfCourtesy_TextBox"
+                android:layout_below="@+id/TitleOfCourtesy_TextBox" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/City_TextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Adress"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/Adress_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/BirthDate_TextBox"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/BirthDate_TextBox"
+                android:layout_below="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/City_TextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="City"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/City_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/TitleOfCourtesy_TextBox"
+                android:layout_alignLeft="@+id/Adress_TextBox"
+                android:layout_alignRight="@+id/TitleOfCourtesy_TextBox"
+                android:layout_alignStart="@+id/Adress_TextBox"
+                android:layout_below="@+id/Adress_TextBox" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Region_TextBox"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12"
+                android:text="Region"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/Region_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/City_TextBox"
+                android:layout_alignLeft="@+id/City_TextBox"
+                android:layout_alignRight="@+id/City_TextBox"
+                android:layout_alignStart="@+id/City_TextBox"
+                android:layout_below="@+id/City_TextBox" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/PostalCode_TextBox"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_alignStart="@+id/textView18"
+                android:text="Postal code"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/PostalCode_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Region_TextBox"
+                android:layout_alignLeft="@+id/Region_TextBox"
+                android:layout_alignRight="@+id/Region_TextBox"
+                android:layout_alignStart="@+id/Region_TextBox"
+                android:layout_below="@+id/Region_TextBox" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Country_TextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Country"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/Country_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/PostalCode_TextBox"
+                android:layout_alignLeft="@+id/PostalCode_TextBox"
+                android:layout_alignRight="@+id/PostalCode_TextBox"
+                android:layout_alignStart="@+id/PostalCode_TextBox"
+                android:layout_below="@+id/PostalCode_TextBox" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/HomePhone_TextBox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="Home phone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/HomePhone_TextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Country_TextBox"
+                android:layout_alignLeft="@+id/Country_TextBox"
+                android:layout_alignRight="@+id/Country_TextBox"
+                android:layout_alignStart="@+id/Country_TextBox"
+                android:layout_below="@+id/Country_TextBox" />
+
+            <Button
+                android:id="@+id/Save_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView21"
+                android:layout_centerHorizontal="true"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/Cancel_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/Save_Button"
+                android:layout_toEndOf="@+id/Save_Button"
+                android:layout_toRightOf="@+id/Save_Button"
+                android:text="Cancel" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

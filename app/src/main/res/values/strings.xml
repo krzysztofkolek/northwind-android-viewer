@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">PUM - Krzysztof Kołek</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="title_activity_employee">Employees</string>
+    <string name="title_activity_supplier">Suppliers</string>
+    <string name="title_activity_customer">Customers</string>
+    <string name="title_activity_detailed_customer">Detailed Customer</string>
+    <string name="title_activity_detailed_employee">Detailed Employee</string>
+    <string name="title_activity_detailed_supplier">Detailed Supplier</string>
+    <string name="title_activity_sqlviewer">SQL Viewer</string>
+
+
+    <!--
+        main menu
+    -->
+    <string-array name="mainMenu_array">
+        <item>Employees</item>
+        <item>Customers</item>
+        <item>Suppliers</item>
+        <item>SQL</item>
+    </string-array>
+
+    <!--
+        SQL viewer
+    -->
+    <string-array name="table_arrays">
+        <item>Employees</item>
+        <item>Customers</item>
+        <item>Suppliers</item>
+    </string-array>
+
+
+    <!--
+        All the connection strings responsible for the api reference
+        fill in with correct urls
+    -->
+    <string name="Customer_api">/api/SimpleCustomers</string>
+    <string name="Supplier_api">/api/SimpleSuppliers</string>
+    <string name="Employee_api">/api/SimpleEmployees</string>
+    <string name="Customer_api_set">/api/SimpleCustomers/Post</string>
+    <string name="Supplier_api_set">/api/SimpleSuppliers/Post</string>
+    <string name="Employee_api_set">/api/SimpleEmployees/Post</string>
+    <string name="Sql_api_set">/api/SQL/GetQueryResult</string>
+
+
+</resources>
